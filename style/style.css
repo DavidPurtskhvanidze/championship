@@ -10,9 +10,19 @@ body {
     font-family: Arial, 'Helvetica Neue', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.3;
+    font-style: normal;
+    line-height: 1;
     color: #FFF;
     background-color: #1E0044;
+}
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .container {
     max-width: 1240px;
@@ -22,6 +32,11 @@ body {
 /* Header */
 .header {
     background-color: #120127;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
 .header__inner {
     display: flex;
@@ -44,9 +59,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 .header__navigation-item {
 
@@ -57,7 +69,6 @@ body {
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 31px;
 }
 .header__navigation-link:hover {
     color: #FFD262;
@@ -77,3 +88,106 @@ body {
     color: #191919;
 }
 /* Header */
+
+/*Main Content*/
+.main-content {
+    padding-top: 110px;
+}
+.main-section {
+    position: relative;
+    padding: 110px 0 84px;
+    display: flex;
+    flex-direction: column;
+}
+.main-section__title {
+    position: relative;
+    margin-bottom: 70px;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -3px;
+    z-index: 1;
+}
+.main-section__title-icon {
+    position: relative;
+    height: 74px;
+}
+.main-section__title-icon:after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0.2em;
+    display: inline-block;
+    background-image: url(/assets/rub.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 1em;
+    height: 1em;
+}
+.main-section__description {
+    font-size: 33px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-left: 10%;
+}
+.main-section__info-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.tag-list {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    grid-template-rows: 52px 52px;
+    gap: 8px 8px;
+    grid-template-areas:
+    "first second"
+    "last last";
+}
+.tag-list__item:nth-child(1) { grid-area: first; }
+.tag-list__item:nth-child(2) { grid-area: second; }
+.tag-list__item:nth-child(3) { grid-area: last; }
+.tag-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    background-color: #1573FF;
+    border-radius: 30px;
+}
+.main-section__img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+.main-section__img-box:after {
+    content: '';
+    height: 110%;
+    width: 110%;
+    display: block;
+    position: absolute;
+    background-color: rgba(68, 21, 255, 0.50);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(70px);
+}
+.main-section__img-box:before {
+    content: '';
+    height: 98px;
+    width: 98px;
+    display: block;
+    background-image: url(/assets/star_gold.svg);
+    position: absolute;
+    top: 0;
+    left: -40%;
+}
+/*Main Content*/
