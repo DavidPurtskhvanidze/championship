@@ -19,15 +19,63 @@ h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
+p {
+    margin: 0 0 10px;
+}
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
+/* Common elements */
 .container {
     max-width: 1240px;
     margin: 0 auto;
 }
+
+.star-gold-icon {
+    display: inline-block;
+    background-image: url(/assets/star_gold.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 98px;
+}
+.star-white-icon {
+    display: inline-block;
+    background-image: url(/assets/star_white.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 98px;
+    height: 98px;
+}
+.rub-icon {
+    display: inline-block;
+    background-image: url(/assets/rub.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+}
+
+.flag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 1px solid #979797;
+    font-size: 18px;
+    height: 50px;
+    padding: 0 20px;
+}
+.flag_border-white {
+    border-color: #FFF;
+}
+/* Common elements */
 
 /* Header */
 .header {
@@ -93,6 +141,8 @@ ul {
 .main-content {
     padding-top: 110px;
 }
+
+/*main section*/
 .main-section {
     position: relative;
     padding: 110px 0 84px;
@@ -141,7 +191,6 @@ ul {
     width: 400px;
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    grid-template-rows: 52px 52px;
     gap: 8px 8px;
     grid-template-areas:
     "first second"
@@ -154,12 +203,13 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 6px 17px;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.5px;
     background-color: #1573FF;
     border-radius: 30px;
+    min-height: 40px;
 }
 .main-section__img-box {
     display: flex;
@@ -186,8 +236,114 @@ ul {
     width: 98px;
     display: block;
     background-image: url(/assets/star_gold.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: -40%;
 }
+/*main section*/
+
+/*what is section*/
+.what-is-section {
+    padding: 84px 0 84px;
+}
+.what-is-section__box {
+    background-color: #1573FF;
+    border-radius: 36px;
+    padding: 43px 50px;
+    position: relative;
+}
+.what-is-section__title {
+    position: relative;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 28px 0;
+}
+.what-is-section__title:after {
+    content: '';
+    height: 160px;
+    width: 540px;
+    display: block;
+    background-image: url(/assets/people_circles.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+.what-is-section__text-box {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+.what-is-section__text-box__item {
+    flex: 1 1 50%;
+    width: 50%;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.star-gold-icon_what-is-section-position {
+    position: absolute;
+    bottom: -34px;
+    left: -34px;
+}
+.star-white-icon_what-is-section-position {
+    position: absolute;
+    top: -26px;
+    right: -26px;
+    width: 82px;
+    height: 82px;
+}
+.rub-icon_what-is-section-position {
+    position: absolute;
+    right: -34px;
+    bottom: -34px;
+}
+/*what is section*/
+
+/*for what section*/
+.for-what-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.for-what-section__title {
+    font-size: 78px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 28px 0;
+    text-align: center;
+}
+.for-what-section__boxes {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.for-what-section__box {
+    background-color: #8836AE;
+    padding: 34px;
+    border-radius: 35px;
+    flex-basis: calc(50% - 8px);
+    max-width: calc(50% - 8px);
+}
+.for-what-section__box-title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.for-what-section__box-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    width: 84%;
+}
+/*for what section*/
+
 /*Main Content*/
