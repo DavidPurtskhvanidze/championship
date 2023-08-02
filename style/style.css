@@ -5,6 +5,9 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 body {
     /*font-family: 'Roboto', Arial, sans-serif;*/
     font-family: Arial, 'Helvetica Neue', sans-serif;
@@ -39,6 +42,9 @@ ul {
 }
 .color-orange {
     color: #ff8562;
+}
+.color-green {
+    color: #05f800;
 }
 .star-gold-icon {
     display: inline-block;
@@ -657,6 +663,7 @@ ul {
 /*partners sponsors section*/
 .partners-sponsors-section {
     position: relative;
+    margin-bottom: 200px;
 }
 .flag_partners-sponsors-section {
     position: absolute;
@@ -752,5 +759,152 @@ ul {
     right: 9%;
 }
 /*partners sponsors section*/
+
+/*registration section*/
+.registration-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.registration-section__form-box {
+    background-color: #8836AE;
+    margin: 100px 0 0;
+    padding: 140px 60px 30px;
+    border-radius: 35px;
+    position: relative;
+    width: 640px;
+}
+.registration-section__form-title {
+    background-color: #1573FF;
+    border-radius: 14px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+.registration-section__form {
+
+}
+.registration-section__form-item {
+    margin-bottom: 26px;
+}
+.registration-section__form-item_button {
+    text-align: center;
+    margin-top: 30px;
+}
+.registration-section__form-item_checkbox {
+    margin-top: 40px;
+    display: inline-block;
+}
+.registration-section__form-checkbox {
+    display: none;
+}
+.registration-section__form-checkbox-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.registration-section__form-checkbox-label a {
+    text-decoration: none;
+}
+.form-checkbox__checkmark {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    background-color: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    position: relative;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    margin-right: 15px;
+}
+.form-checkbox__checkmark:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: url(/assets/checkmark.svg) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: .2s ease-in-out;
+}
+.registration-section__form-checkbox:checked~.registration-section__form-checkbox-label .form-checkbox__checkmark:before {
+    transform: translate(-50%,-50%) scale(1.2);
+}
+.registration-section__form-input {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+    height: 60px;
+    width: 100%;
+    background-color: #FDC949;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-size: 28px;
+    letter-spacing: -1.5px;
+    padding: 0 20px;
+}
+.registration-section__form-input::placeholder {
+    color: #303030;
+    opacity: 1;
+}
+.registration-section__form-input::-ms-input-placeholder {
+    color: #303030;
+}
+.registration-section__form-button {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #1573FF;
+    border-radius: 30px;
+    border: 2px solid #F7BA4B;
+    height: 64px;
+    padding: 0 10%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.registration-section__icon-orbit {
+    position: absolute;
+    bottom: -144px;
+    right: -144px;
+    z-index: -1;
+}
+.registration-section__icon-megafone {
+    position: absolute;
+    top: -90px;
+    right: -73px;
+    z-index: 1;
+}
+.registration-section__icon-megafone img {
+    width: 140px;
+}
+.registration-section__icon-plane {
+    position: absolute;
+    left: -60px;
+    bottom: -40px;
+    z-index: 1;
+}
+.registration-section__icon-plane img {
+    width: 140px;
+}
+/*registration section*/
 
 /*Main Content*/
