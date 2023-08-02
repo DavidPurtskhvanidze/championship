@@ -107,7 +107,7 @@ ul {
 
 /* Header */
 .header {
-    background-color: #120127;
+    background-color: rgba(18, 1, 39, 0.60);
     position: fixed;
     top: 0;
     right: 0;
@@ -168,6 +168,7 @@ ul {
 
 /*Main Content*/
 .main-content {
+    overflow: hidden;
     padding-top: 110px;
 }
 
@@ -759,6 +760,9 @@ ul {
     top: -24%;
     right: 9%;
 }
+.partners-sponsors__banner-text a {
+    text-decoration: none;
+}
 /*partners sponsors section*/
 
 /*registration section*/
@@ -1030,3 +1034,42 @@ ul {
 /*contacts section*/
 
 /*Main Content*/
+
+/*Footer*/
+.footer {
+    background-color: rgba(18, 1, 39, 0.60);
+}
+.footer-box {
+    padding: 28px 0;
+}
+.footer-box__info {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #979797;
+}
+.footer-box__bottom {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-box__copy {
+    margin-right: 10%;
+}
+.footer-box__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.footer-box__links a {
+    text-decoration: none;
+    color: #FFF;
+}
+.footer-box__links a:hover {
+    color: #fdc949;
+}
+/*Footer*/
