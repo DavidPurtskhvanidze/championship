@@ -34,7 +34,9 @@ ul {
     max-width: 1240px;
     margin: 0 auto;
 }
-
+.color-yellow {
+    color: #FDC949;
+}
 .star-gold-icon {
     display: inline-block;
     background-image: url(/assets/star_gold.svg);
@@ -543,5 +545,110 @@ ul {
     width: 200px;
 }
 /*news section*/
+
+/*organizer section*/
+.organizer-section {
+    padding: 65px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-section__title {
+    font-size: 78px;
+    font-weight: 600;
+    margin: 42px 0 34px;
+    padding-bottom: 34px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #979797;
+}
+.organizer-section__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+    margin: 40px 0 60px;
+    position: relative;
+}
+.organizer-section__box-map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/map.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -40px;
+    left: -128px;
+    width: 700px;
+    height: 664px;
+    z-index: -1;
+}
+.organizer-section__box-map:after {
+    content: '';
+    height: 50%;
+    width: 50%;
+    display: block;
+    position: absolute;
+    background-color: rgba(68, 21, 255, 0.30);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(80px);
+    right: 18%;
+    top: 20%;
+}
+.organizer-section__description {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.organizer-section__description-item {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.organizer-section__count {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 40px 0 60px;
+    position: relative;
+    width: 100%;
+}
+.organizer-section__count-item {
+    flex-basis: calc(33.3333% - 10px);
+    max-width: calc(33.3333% - 10px);
+    background-color: #1573FF;
+    border-radius: 35px;
+    padding: 30px 36px;
+    position: relative;
+}
+.organizer-section__count-item:after {
+    content: '';
+    display: block;
+    background-image: url(/assets/star_white.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 26px;
+    width: 56px;
+    height: 56px;
+}
+.organizer-section__count-item-num {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+.organizer-section__count-item-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/*organizer section*/
 
 /*Main Content*/
