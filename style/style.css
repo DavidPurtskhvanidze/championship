@@ -37,6 +37,9 @@ ul {
 .color-yellow {
     color: #FDC949;
 }
+.color-orange {
+    color: #ff8562;
+}
 .star-gold-icon {
     display: inline-block;
     background-image: url(/assets/star_gold.svg);
@@ -409,7 +412,7 @@ ul {
     margin: 28px 0 50px;
     text-align: center;
 }
-.flag__for-whom-section {
+.flag_for-whom-section {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -650,5 +653,104 @@ ul {
     margin-bottom: 20px;
 }
 /*organizer section*/
+
+/*partners sponsors section*/
+.partners-sponsors-section {
+    position: relative;
+}
+.flag_partners-sponsors-section {
+    position: absolute;
+    top: 8%;
+    left: 0;
+}
+.partners-sponsors__title {
+    font-size: 147px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 0.8;
+    position: relative;
+}
+.partners-sponsors__title:before {
+    content: '';
+    height: 0.8em;
+    width: 0.8em;
+    display: block;
+    background-image: url(/assets/star_gold.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1%;
+    left: 18%;
+}
+.partners-sponsors__title:after {
+    content: '';
+    height: 300px;
+    width: 300px;
+    display: block;
+    position: absolute;
+    top: 32%;
+    background-color: rgba(68, 21, 255, 0.50);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(84px);
+}
+.partners-sponsors__title span:nth-child(1) {
+    align-self: flex-end;
+}
+.partners-sponsors__title span:nth-child(2) {
+    align-self: flex-start;
+}
+.partners-sponsors-section__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 100px 0 60px;
+    position: relative;
+    width: 100%;
+}
+.partners-sponsors-section__list-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc(20% - 4px);
+    max-width: calc(20% - 4px);
+    height: 136px;
+    background-color: #FFF;
+    border-radius: 25px;
+    padding: 0 36px;
+    position: relative;
+}
+.partners-sponsors-section__list-item-img {
+    max-width: 100%;
+}
+.partners-sponsors__banner {
+    background-color: #8836AE;
+    padding: 34px 50px;
+    border-radius: 25px;
+    position: relative;
+}
+.partners-sponsors__banner-text {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+.partners-sponsors__banner-text:after {
+    content: '';
+    height: 186px;
+    width: 186px;
+    display: block;
+    background-image: url(/assets/plane.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -24%;
+    right: 9%;
+}
+/*partners sponsors section*/
 
 /*Main Content*/
