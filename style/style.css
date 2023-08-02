@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 html {
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 body {
     /*font-family: 'Roboto', Arial, sans-serif;*/
@@ -17,7 +17,7 @@ body {
     line-height: 1;
     color: #FFF;
     background-color: #1E0044;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
@@ -120,6 +120,7 @@ ul {
     height: 110px;
 }
 .header__logo {
+    display: inline-block;
     background-image: url(/assets/finsgram_logo.svg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -766,6 +767,7 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 400px;
 }
 .registration-section__form-box {
     background-color: #8836AE;
@@ -906,5 +908,125 @@ ul {
     width: 140px;
 }
 /*registration section*/
+
+/*contacts section*/
+.contacts-section {
+    padding-bottom: 80px;
+    position: relative;
+}
+.contacts-section__box {
+
+}
+.contacts-section__logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+    position: relative;
+    background-image: url(/assets/finsgram_logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 270px;
+    height: 65px;
+}
+.contacts-section__logo:after {
+    content: '';
+    height: 300px;
+    width: 300px;
+    display: block;
+    position: absolute;
+    background-color: rgba(68, 21, 255, 0.50);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(70px);
+}
+.contacts-section__address {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 53px;
+}
+.contacts-section__phone {
+    font-size: 54px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 53px;
+}
+.contacts-section__phone a {
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-section__phone a:hover {
+    text-decoration: underline;
+}
+.contacts-section__email {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 53px;
+}
+.contacts-section__email a {
+    color: #fff;
+    text-decoration: none;
+}
+.contacts-section__email a:hover {
+    text-decoration: underline;
+}
+.contacts-section__vk {
+    display: inline-block;
+    background-image: url(/assets/vk_button.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 66px;
+    height: 66px;
+}
+.contacts-section__img-box-cup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    right: 12%;
+    z-index: 0;
+}
+.contacts-section__img-box-cup img {
+    width: 330px;
+}
+.contacts-section__img-box-cup:after {
+    content: '';
+    height: 110%;
+    width: 110%;
+    display: block;
+    position: absolute;
+    background-color: rgba(68, 21, 255, 0.50);
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(70px);
+}
+.star-gold-icon_contacts-section-1 {
+    position: absolute;
+    bottom: 20%;
+    left: -35%;
+    width: 77px;
+    height: 77px;
+}
+.star-gold-icon_contacts-section-2 {
+    position: absolute;
+    top: 5%;
+    right: -50%;
+    width: 138px;
+    height: 138px;
+}
+.contacts-section__img-box-notice {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+.contacts-section__img-box-notice img {
+    width: 170px;
+}
+/*contacts section*/
 
 /*Main Content*/
