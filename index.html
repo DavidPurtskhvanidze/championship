@@ -20,17 +20,17 @@
                         </a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="header__navigation-link" title="Новости" href="">
+                        <a class="header__navigation-link" title="Новости" href="#news">
                             новости
                         </a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="header__navigation-link" title="Контакты" href="">
+                        <a class="header__navigation-link" title="Контакты" href="#contacts">
                             контакты
                         </a>
                     </li>
                     <li class="header__navigation-item">
-                        <a class="header__navigation-link header__navigation-link_like-button" title="Регистрация" href="">
+                        <a class="header__navigation-link header__navigation-link_like-button" title="Регистрация" href="#registration">
                             Регистрация
                         </a>
                     </li>
@@ -76,9 +76,9 @@
         <!-- main-section -->
 
         <!-- what-is-section -->
-        <section class="container what-is-section">
+        <section class="container what-is-section" id="about_championship">
             <div class="what-is-section__box">
-                <div class="flag flag_border-white" id="about_championship">
+                <div class="flag flag_border-white">
                     о чемпионате
                 </div>
                 <div class="what-is-section__title-box">
@@ -116,8 +116,8 @@
         <!-- what-is-section -->
 
         <!-- for-what-section -->
-        <section class="container for-what-section">
-            <div class="flag" id="for_what">
+        <section class="container for-what-section" id="for_what">
+            <div class="flag">
                 для чего
             </div>
             <h3 class="for-what-section__title">
@@ -185,7 +185,7 @@
                     <path d="M381.853 79.7353L379.477 96.6185L396.075 100.517L379.192 98.1407L375.293 114.738L377.67 97.8553L361.072 93.9571L377.955 96.333L381.853 79.7353Z" fill="#FDC949"/>
                 </svg>
             </div>
-            <a class="button button_for-what-section" href="">
+            <a class="button button_for-what-section" href="#registration">
                 Подать заявку на участие
             </a>
             <div class="for-what-section__background_transform">
@@ -195,8 +195,8 @@
         <!-- for-what-section -->
 
         <!-- for-whom-section -->
-        <section class="container for-whom-section">
-            <div class="flag flag_for-whom-section" id="for-whom">
+        <section class="container for-whom-section" id="for-whom">
+            <div class="flag flag_for-whom-section">
                 для кого
             </div>
             <h3 class="for-whom-section__title">
@@ -237,7 +237,7 @@
                     Регистрируйся на чемпионат!
                 </div>
             </div>
-            <a class="button button_for-whom-section" href="">
+            <a class="button button_for-whom-section" href="#registration">
                 Принять участие
             </a>
             <div class="star-gold-icon star-gold-icon_for-whom-section-1"></div>
@@ -246,8 +246,8 @@
         <!-- for-whom-section -->
 
         <!-- news-section -->
-        <section class="container news-section">
-            <div class="flag" id="news">
+        <section class="container news-section" id="news">
+            <div class="flag">
                 новости
             </div>
             <h3 class="news-section__title">
@@ -279,8 +279,8 @@
         <!-- news-section -->
 
         <!-- organizer-section -->
-        <section class="container organizer-section">
-            <div class="flag" id="organizer">
+        <section class="container organizer-section" id="organizer">
+            <div class="flag">
                 организатор
             </div>
             <h3 class="organizer-section__title">
@@ -337,8 +337,8 @@
         <!-- organizer-section -->
 
         <!-- partners-sponsors-section -->
-        <section class="container partners-sponsors-section">
-            <div class="flag flag_partners-sponsors-section" id="partners-sponsors">
+        <section class="container partners-sponsors-section" id="partners-sponsors">
+            <div class="flag flag_partners-sponsors-section">
                 поддержка
             </div>
             <h3 class="partners-sponsors__title">
@@ -376,8 +376,8 @@
         <!-- partners-sponsors-section -->
 
         <!-- registrations-section -->
-        <section class="container registration-section">
-            <div class="flag" id="registration">
+        <section class="container registration-section" id="registration">
+            <div class="flag">
                 заявка
             </div>
             <div class="registration-section__form-box">
@@ -387,22 +387,34 @@
                 <div class="registration-section__form">
                     <form action="">
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="text" placeholder="Имя">
+                            <label>
+                                <input class="registration-section__form-input" type="text" placeholder="Имя">
+                            </label>
                         </div>
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="text" placeholder="Фамилия">
+                            <label>
+                                <input class="registration-section__form-input" type="text" placeholder="Фамилия">
+                            </label>
                         </div>
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="text" placeholder="Адрес">
+                            <label>
+                                <input class="registration-section__form-input" type="text" placeholder="Адрес">
+                            </label>
                         </div>
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="text" placeholder="Наименование учебного заведения">
+                            <label>
+                                <input class="registration-section__form-input" type="text" placeholder="Наименование учебного заведения">
+                            </label>
                         </div>
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="tel" placeholder="Контактный телефон">
+                            <label>
+                                <input class="registration-section__form-input" type="tel" placeholder="Контактный телефон">
+                            </label>
                         </div>
                         <div class="registration-section__form-item">
-                            <input class="registration-section__form-input" type="email" placeholder="E-mail">
+                            <label>
+                                <input class="registration-section__form-input" type="email" placeholder="E-mail">
+                            </label>
                         </div>
                         <div class="registration-section__form-item registration-section__form-item_checkbox">
                             <input id="check" name="Newsletter agreement" type="checkbox" class="registration-section__form-checkbox">
@@ -438,7 +450,7 @@
         <!-- registration-section -->
 
         <!-- contacts-section -->
-        <section class="container contacts-section">
+        <section class="container contacts-section" id="contacts">
             <div class="contacts-section__box">
                 <a class="contacts-section__logo" title="Ссылка на главную страницу" href="/"></a>
                 <div class="contacts-section__address">
