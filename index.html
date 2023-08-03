@@ -15,7 +15,7 @@
             <nav class="header__navigation-box">
                 <ul class="header__navigation">
                     <li class="header__navigation-item">
-                        <a class="header__navigation-link" title="О чемпионате" href="">
+                        <a class="header__navigation-link" title="О чемпионате" href="#about_championship">
                             о чемпионате
                         </a>
                     </li>
@@ -36,6 +36,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <button onclick="toggleClassMenu()" type="button" class="header__navigation-box-burger-menu"></button>
         </div>
     </header>
     <!-- header -->
@@ -79,12 +81,16 @@
                 <div class="flag flag_border-white" id="about_championship">
                     о чемпионате
                 </div>
-                <h3 class="what-is-section__title">
-                    Что такое<br>
-                    чемпионат<br>
-                    по финансовым<br>
-                    играм?
-                </h3>
+                <div class="what-is-section__title-box">
+                    <h3 class="what-is-section__title">
+                        Что такое<br>
+                        чемпионат<br>
+                        по финансовым<br>
+                        играм?
+                    </h3>
+                    <img class="what-is-section__title-img" src="/assets/people_circles.png" alt="">
+                </div>
+                
                 <div class="what-is-section__text-box">
                     <p class="what-is-section__text-box__item">
                         Летний чемпионат по финансовым играм - это
@@ -133,6 +139,7 @@
                         игровому формату новые знания усвоятся
                         значительно лучше!
                     </div>
+                    <img class="for-what-section__box-img-lamp" src="/assets/lamp.png" alt="">
                 </div>
                 <div class="for-what-section__box">
                     <h4 class="for-what-section__box-title">
@@ -145,6 +152,7 @@
                         разбираешься в теме финансов и умеешь
                         управлять своими ресурсами.
                     </div>
+                    <img class="for-what-section__box-img-check" src="/assets/check.png" alt="">
                 </div>
                 <div class="for-what-section__box">
                     <h4 class="for-what-section__box-title">
@@ -158,6 +166,7 @@
                         ты сможешь потренироваться, закрепить новую
                         информацию и систематизировать свои знания.
                     </div>
+                    <img class="for-what-section__box-img-learn" src="/assets/learn.png" alt="">
                 </div>
                 <div class="for-what-section__box">
                     <h4 class="for-what-section__box-title">
@@ -165,9 +174,10 @@
                         подарки
                     </h4>
                     <div class="for-what-section__box-text">
-                        Все участники получат сертификаты, а
+                        Все участники получат сертификаты, а<br>
                         финалистов и призеров ждут памятные подарки.
                     </div>
+                    <img class="for-what-section__box-img-win" src="/assets/win.png" alt="">
                 </div>
                 <svg class="for-what-section__icon" width="407" height="364" viewBox="0 0 407 364" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M266.047 262.316C217.512 307.16 165.252 338.718 120.012 353.505C74.7276 368.305 36.6757 366.246 16.3062 344.199C-4.06334 322.153 -3.11279 284.057 15.2161 240.083C33.5274 196.152 69.1142 146.546 117.649 101.703C166.185 56.8577 218.445 25.299 263.684 10.5122C308.969 -4.28812 347.021 -2.22893 367.391 19.818C387.76 41.8648 386.809 79.9601 368.48 123.936C350.169 167.866 314.583 217.471 266.047 262.316Z" stroke="#6F3689"/>
@@ -178,6 +188,9 @@
             <a class="button button_for-what-section" href="">
                 Подать заявку на участие
             </a>
+            <div class="for-what-section__background_transform">
+                <div class="for-what-section__background"></div>
+            </div>
         </section>
         <!-- for-what-section -->
 
@@ -227,6 +240,8 @@
             <a class="button button_for-whom-section" href="">
                 Принять участие
             </a>
+            <div class="star-gold-icon star-gold-icon_for-whom-section-1"></div>
+            <div class="star-gold-icon star-gold-icon_for-whom-section-2"></div>
         </section>
         <!-- for-whom-section -->
 
@@ -268,11 +283,14 @@
             <div class="flag" id="organizer">
                 организатор
             </div>
-            <h3 class="news-section__title">
-                Организатор чемпионата
+            <h3 class="organizer-section__title">
+                Организатор<br>
+                чемпионата
             </h3>
             <div class="organizer-section__box">
-                <div class="organizer-section__box-map"></div>
+                <div class="organizer-section__box-map">
+                    <img class="organizer-section__box-map-img" src="/assets/map.png" alt="">
+                </div>
                 <div class="organizer-section__description">
                     <p class="organizer-section__description-item">
                         <span class="color-yellow">Финсграм</span> - это некоммерческая
@@ -314,6 +332,7 @@
                     </div>
                 </div>
             </div>
+            <div class="organizer-section__background"></div>
         </section>
         <!-- organizer-section -->
 
@@ -452,17 +471,30 @@
                 АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ ЦЕНТР РАЗВИТИЯ ЛИЧНЫХ И ПРОФЕССИОНАЛЬНЫХ КОМПЕТЕНЦИЙ "НАСТАВНИКИ"
             </div>
             <div class="footer-box__bottom">
-                <div class="footer-box__copy">
-                    © Финсграм 2022-2023. Все права защищены.
+                <div class="footer-box__bottom-item footer-box__bottom-item_copy">
+                    <div class="footer-box__copy">
+                        © Финсграм 2022-2023. Все права защищены.
+                    </div>
                 </div>
-                <div class="footer-box__links">
-                    <a title="Общие положения" href="/">Общие положения</a>
-                    <a title="Регламент проведения чемпионата" href="/">Регламент проведения чемпионата</a>
-                    <a title="Политика обработки персональных данных" href="">Политика обработки персональных данных</a>
+                <div class="footer-box__bottom-item">
+                    <a class="footer-box__link" title="Общие положения" href="/">Общие положения</a>
+                </div>
+                <div class="footer-box__bottom-item">
+                    <a class="footer-box__link" title="Регламент проведения чемпионата" href="/">Регламент проведения чемпионата</a>
+                </div>
+                <div class="footer-box__bottom-item">
+                    <a class="footer-box__link" title="Политика обработки персональных данных" href="">Политика обработки персональных данных</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- footer -->
+
+    <script>
+        function toggleClassMenu() {
+            let element = document.body;
+            element.classList.toggle("hamburger-menu-is-open");
+        }
+    </script>
 </body>
 </html>
